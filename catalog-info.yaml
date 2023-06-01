@@ -1,0 +1,15 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-component-that-has-no-system
+  title: Systemless Component
+  description: Carvel Package shipping Backstage with TAP GUI plugins
+  annotations:
+    gitlab.com/project-slug: 'project-star/pstar-backstage-poc'
+spec:
+  type: package
+  lifecycle: production
+  owner: tap-gui
+  system: my-ephemeral-system
+  subcomponentOf: tap
